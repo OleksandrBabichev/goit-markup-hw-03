@@ -9,6 +9,10 @@
 акцент #FFFFFF
 футер контакты rgba(255, 255, 255, 0.6)
 ховер 2196F3
+
+ширина 1170 пх
+гаттер 30 пх
+=> windth 1200 px
 */
 
 :root {--primary-text-color: #757575;
@@ -17,6 +21,7 @@
         --primary-bcg-color: #FFFFFF;
         --secondary-bcg-color: #F5F4FA;
         --footer-bcg-color: #2F303A;}
+
 body {
     background-color: var(--primary-bcg-color);
     color: var(--primary-text-color);
@@ -26,20 +31,43 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;}
 
-.list {list-style: none;}
+.list {list-style: none;
+    padding-left: 0;}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+
 
 /* head  */
+.container.header {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #D9D9D9;
+}
 
 .logo {color: #000000;
         font-family: raleway, sans-serif;
         font-weight: 700;
         font-size: 26px;
-        line-height: 1.2;}
+        line-height: 1.2;
+}
 
 .web {color: var(--hover-tet-color);}
 
 .link{
     text-decoration: none;}
+
+.site-nav .list {
+    display: flex;
+   }  
+
 
 .site-nav .link{
     color: var(--title-text-color);
@@ -47,7 +75,19 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+
+    padding-right: 50px;
+}
+
+.head-contact .list {
+    display: flex;
+    justify-content: flex-end;}
+
+.head-contact .link {
+    
+    padding-left: 50px;
+}
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -70,7 +110,11 @@ body {
 
 /* hero  */
 .hero {    
-    background-color: #2F303A;} 
+    background-color: #2F303A;
+    text-align: center;
+    margin-bottom: 90px;
+    padding: 100px 100px 100px 100px;
+} 
 /* временно */
 
 .hero-title { 
@@ -80,7 +124,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;}
+    color: #ffffff;
+
+    margin-bottom: 30px;
+    margin-top: 0;}
 
 .hero .button {    
     font-weight: 700;
@@ -89,6 +136,23 @@ body {
     letter-spacing: 0.06em;}
 
 /* переваги  */
+
+.section .list {
+    display: flex;
+    margin: 0;}
+
+.section-title {
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.title .feature-text {
+    line-height: 1.7;
+
+    width: 270px;}
+
+.feature li {margin-right: 30px;}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -108,9 +172,11 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
-    text-transform: uppercase;}
-
-.feature p {line-height: 1.7;}
+    text-transform: uppercase;
+    
+    margin-bottom: 10px;
+    margin-top: 0;}
+    
 
 .section-title {
     color: var(--title-text-color);
@@ -121,9 +187,28 @@ body {
     text-align: center;
     letter-spacing: 0.03em;}
 
+/* Чим ми займаємося */
+
+.section.technology {
+    padding-top: 90px;
+    padding-bottom: 90px;}
+
+.technology .list {
+    justify-content: space-between;}
 
 /* команда */
 .team-bcg {background-color: var(--secondary-bcg-color);}
+
+section.team-bcg {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.list.team {
+    text-align: center;
+    justify-content: space-between;
+}
+
 
 .team .title {
     color: var(--title-text-color);
@@ -131,12 +216,17 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team .job {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+
+    /* margin-bottom: 30px; */
 }
 
 .examples .title {
@@ -145,7 +235,15 @@ body {
 
 /* footer */
 
-.foot {background-color: var(--footer-bcg-color);}
+
+.foot {
+    background-color: var(--footer-bcg-color);
+    height: 250px;    
+}
+
+.container-foot {
+    padding-top: 60px;
+}
 
 .foot .logo-foot {
     color: var(--primary-bcg-color);
@@ -153,7 +251,13 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+
+    margin-bottom: 20px;}
+
+.address li {
+    margin-bottom: 10px;
+}
 
 .address .contact-foot:hover,
 .address .contact-foot:focus,
@@ -203,7 +307,8 @@ body {
 .button.secondary:focus {
     color: var(--primary-bcg-color);
     background-color: var(--hover-tet-color);
-    border-color: var(--hover-tet-color);}
+    border-color: var(--hover-tet-color);
+}
 
 /* portfolio page  */
 
