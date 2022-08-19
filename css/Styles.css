@@ -109,13 +109,15 @@ header {border-bottom: 1px solid #ECECEC;}
     color: var(--hover-tet-color)
 }
 
+.section {
+    /*  */
+    padding-top: 94px;
+}
+
 /* hero  */
 .hero {    
     background-color: #2F303A;
-    text-align: center;
-    margin-bottom: 90px;
-    padding: 100px 100px 100px 100px;
-} 
+    text-align: center;} 
 /* временно */
 
 .hero-title { 
@@ -127,6 +129,7 @@ header {border-bottom: 1px solid #ECECEC;}
     text-transform: uppercase;
     color: #ffffff;
 
+    padding-top: 200px;
     margin-bottom: 30px;
     margin-top: 0;}
 
@@ -134,7 +137,10 @@ header {border-bottom: 1px solid #ECECEC;}
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
+
+    margin-bottom: 200px;   
+}
 
 /* переваги  */
 
@@ -149,10 +155,13 @@ header {border-bottom: 1px solid #ECECEC;}
 
 .title .feature-text {
     line-height: 1.7;
+    width: 270px;
+}
 
-    width: 270px;}
-
-.feature li {margin-right: 30px;}
+.feature li {margin-right: 30px;
+    
+}
+.first {margin-left: 75px;}
 
 .visually-hidden {
     position: absolute;
@@ -191,8 +200,8 @@ header {border-bottom: 1px solid #ECECEC;}
 /* Чим ми займаємося */
 
 .section.technology {
-    padding-top: 90px;
-    padding-bottom: 90px;}
+    padding-bottom: 94px;
+}
 
 .technology .list {
     justify-content: space-between;}
@@ -200,9 +209,8 @@ header {border-bottom: 1px solid #ECECEC;}
 /* команда */
 .team-bcg {background-color: var(--secondary-bcg-color);}
 
-section.team-bcg {
-    padding-top: 90px;
-    padding-bottom: 90px;
+.section.team-bcg {
+        padding-bottom: 94px;
 }
 
 .list.team {
@@ -316,12 +324,15 @@ section.team-bcg {
 }
 
 /* portfolio page  */
+
+.section.filter {
+    padding-bottom: 94px;
+}
+
 .filter-buttons {
     display: flex;
-    
+    padding-bottom: 50px;
     justify-content: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
 }
 
 .filter .button {
@@ -338,8 +349,7 @@ section.team-bcg {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 90px;
-    /* text-align: center; */
+    
 }
 
 .examples li {
