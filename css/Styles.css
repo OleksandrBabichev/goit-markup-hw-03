@@ -1,0 +1,229 @@
+/* 
+осн.цвет фона #F5F5F5
+вторичный фон #F5F4FA
+фон футер #2F303A
+фон хэдэра #FFFFFF
+
+заглавия #212121
+текст #757575
+акцент #FFFFFF
+футер контакты rgba(255, 255, 255, 0.6)
+ховер 2196F3
+*/
+
+:root {--primary-text-color: #757575;
+        --title-text-color: #212121;
+        --hover-tet-color: #2196F3;
+        --primary-bcg-color: #FFFFFF;
+        --secondary-bcg-color: #F5F4FA;
+        --footer-bcg-color: #2F303A;}
+body {
+    background-color: var(--primary-bcg-color);
+    color: var(--primary-text-color);
+
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    font-size: 14px;}
+
+.list {list-style: none;}
+
+/* head  */
+
+.logo {color: #000000;
+        font-family: raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;}
+
+.web {color: var(--hover-tet-color);}
+
+.link{
+    text-decoration: none;}
+
+.site-nav .link{
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--hover-tet-color);}
+
+.site-nav .current {color: var(--hover-tet-color);}
+
+.head-contact {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.head-contact:hover,
+.head-contact:focus {
+    color: var(--hover-tet-color)
+}
+
+/* hero  */
+.hero {    
+    background-color: #2F303A;} 
+/* временно */
+
+.hero-title { 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;}
+
+.hero .button {    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.06em;}
+
+/* переваги  */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
+
+.feature .title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;}
+
+.feature p {line-height: 1.7;}
+
+.section-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;}
+
+
+/* команда */
+.team-bcg {background-color: var(--secondary-bcg-color);}
+
+.team .title {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.team .job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.examples .title {
+    color: var(--title-text-color);
+}
+
+/* footer */
+
+.foot {background-color: var(--footer-bcg-color);}
+
+.foot .logo-foot {
+    color: var(--primary-bcg-color);
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;}
+
+.address .contact-foot:hover,
+.address .contact-foot:focus,
+.address .address-foot:hover,
+.address .address-foot:focus {
+    color: var(--hover-tet-color);
+}
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.address-foot {
+    color: var(--primary-bcg-color);
+}
+
+.contact-foot {
+    color: rgba(255, 255, 255, 0.6);}
+
+/* кнопки */
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-bcg-color);}
+
+.button.primary {
+    color: #ffffff;
+    background-color: var(--hover-tet-color);
+    cursor: pointer;
+
+    font-family: inherit;}
+
+.button.secondary { 
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+
+    font-family: inherit;
+    letter-spacing: 00.03em;
+    cursor: pointer;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-bcg-color);
+    background-color: var(--hover-tet-color);
+    border-color: var(--hover-tet-color);}
+
+/* portfolio page  */
+
+.filter .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;}
+
+.filter .title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;}
+
+.filter p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
