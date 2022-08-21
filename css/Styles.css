@@ -29,7 +29,9 @@ body {
     font-family: roboto, sans-serif;
     font-style: normal;
     letter-spacing: 0.03em;
-    font-size: 14px;}
+    font-size: 14px;
+}
+
 
 h1,
 h2,
@@ -236,10 +238,6 @@ header {border-bottom: 1px solid #ECECEC;
 
 /* Чим ми займаємося */
 
-/* .section.technology {
-    padding-top: 94px;
-} */
-
 .tech-img:not(:last-child) {
     margin-right: 45px;}
 
@@ -353,13 +351,10 @@ header {border-bottom: 1px solid #ECECEC;
 
 /* portfolio page  */
 
-.section.filter {
-    padding-bottom: 94px;
-}
 
 .filter-buttons {
     display: flex;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -382,7 +377,7 @@ header {border-bottom: 1px solid #ECECEC;
 
 .examples li {
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+    
 }
 
 .examples h3,
@@ -400,7 +395,7 @@ header {border-bottom: 1px solid #ECECEC;
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 5px;
 }
 
@@ -414,3 +409,9 @@ header {border-bottom: 1px solid #ECECEC;
     margin-bottom: 20px;
 }
 
+.frame {
+    width: 370px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
